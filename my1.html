@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 200px;
+        }
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        .checkbox-group label {
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2><center>Registration Form</center></h2>
+        <p>Of course, all submitted information is kept in the strictest confidence.<br>
+        You always retain control of your information with D.W. Simpson & Co.<br>
+        Our services are always at no cost to you.</p>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="state">State/Province:</label>
+        <input type="text" id="state" name="state" required><br>
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+
+        <label for="phone-h">Phone: (H)</label>
+        <input type="text" id="phone-h" name="phone-h"><br>
+
+        <label for="fax">Fax:</label>
+        <input type="text" id="fax" name="fax"><br>
+
+        <label for="phone-w">Phone: (W)</label>
+        <input type="text" id="phone-w" name="phone-w">
+        <span>(if able to speak freely)</span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company">
+        <span>(optional)</span><br>
+
+        <label for="region">Desired Region</label>
+        <select id="region" name="region">
+            <option value="other">Other</option>
+        </select><br>
+        <label for="other-region">Other:</label>
+        <input type="text" id="other-region" name="other-region"><br>
+
+        <div class="checkbox-group">
+            <label>Professional designations earned:</label><br>
+            <input type="checkbox" id="college-student" name="designation" value="College Student">
+            <label for="college-student">College Student</label>
+            <input type="checkbox" id="actuarial-student" name="designation" value="Actuarial Student">
+            <label for="actuarial-student">Actuarial Student</label>
+            <input type="checkbox" id="acas" name="designation" value="ACAS">
+            <label for="acas">ACAS</label>
+            <input type="checkbox" id="fcas" name="designation" value="FCAS">
+            <label for="fcas">FCAS</label>
+            <input type="checkbox" id="asa" name="designation" value="ASA">
+            <label for="asa">ASA</label>
+            <input type="checkbox" id="fsa" name="designation" value="FSA">
+            <label for="fsa">FSA</label>
+            <input type="checkbox" id="ea" name="designation" value="EA">
+            <label for="ea">EA</label>
+            <input type="checkbox" id="cfa" name="designation" value="CFA">
+            <label for="cfa">CFA</label>
+            <input type="checkbox" id="mba" name="designation" value="MBA">
+            <label for="mba">MBA</label>
+            <input type="checkbox" id="maaa" name="designation" value="MAAA">
+            <label for="maaa">MAAA</label>
+            <input type="checkbox" id="fia" name="designation" value="FIA">
+            <label for="fia">FIA</label>
+            <input type="checkbox" id="fcia" name="designation" value="FCIA">
+            <label for="fcia">FCIA</label>
+            <input type="checkbox" id="fiaa" name="designation" value="FIAA">
+            <label for="fiaa">FIAA</label>
+            <input type="checkbox" id="financial-engineer" name="designation" value="Financial Engineer">
+            <label for="financial-engineer">Financial Engineer</label>
+            <input type="checkbox" id="ms" name="designation" value="M.S.">
+            <label for="ms">M.S.</label>
+            <input type="checkbox" id="phd" name="designation" value="Ph.D.">
+            <label for="phd">Ph.D.</label>
+            <input type="checkbox" id="data-mining" name="designation" value="Data Mining">
+            <label for="data-mining">Data Mining</label><br>
+            <input type="checkbox" id="quant" name="designation" value="Quant">
+            <label for="quant">Quant</label>
+        </div>
+
+        <label for="other-designations">Other Designations:</label>
+        <input type="text" id="other-designations" name="other-designations">
+    </form>
+</body>
+</html>
